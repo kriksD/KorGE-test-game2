@@ -1,0 +1,26 @@
+<ktree width="4096.0" height="1000.0" gridWidth="20" gridHeight="20">
+	<solidrect colorMul="#000000ff" width="100.0" height="1000.0"/>
+	<solidrect colorMul="#000000ff" y="899.9999999999998" width="360.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="709.7777478867204" y="802.3542864692438" rotation="75.0" width="100.0" height="400.0"/>
+	<solidrect colorMul="#000000ff" x="960.0" y="900.0" width="360.0" height="100.0"/>
+	<solidrect colorMul="#573920ff" x="1220.0" y="819.9999999999998" width="80.0" height="80.0"/>
+	<solidrect colorMul="#000000ff" x="1319.9999999999995" y="979.9999999999999" width="160.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="1480.0" y="899.9999999999997" width="320.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="1819.9999999999995" y="799.9999999999999" rotation="45.0" width="120.0" height="160.0"/>
+	<solidrect colorMul="#000000ff" x="1820.0" y="800.0" width="240.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="1479.9999999999998" y="799.9999999999998" width="220.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="1365.8578643762685" y="685.8578643762685" rotation="45.0" width="180.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="1140.0" y="680.0" width="220.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="2060.0" y="699.9999999999999" width="240.0" height="200.0"/>
+	<solidrect colorMul="#573920ff" x="2180.0" y="620.0" width="80.0" height="80.0"/>
+	<solidrect colorMul="#573920ff" x="2080.0" y="620.0" width="80.0" height="80.0"/>
+	<solidrect colorMul="#573920ff" x="2140.0" y="540.0" width="80.0" height="80.0"/>
+	<solidrect colorMul="#000000ff" x="2659.9999999999995" y="799.9999999999998" width="280.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="3319.3185165257814" y="905.1763809020504" rotation="105.00000000000001" width="100.0" height="400.0"/>
+	<solidrect colorMul="#000000ff" x="1779.9999999999995" y="899.9999999999995" width="2320.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="4000.0" y="-8.526512829121202E-14" width="100.0" height="1000.0"/>
+	<solidrect colorMul="#000000ff" x="1500.0" y="700.0" width="560.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="700.0" y="800.0" width="220.0" height="100.0"/>
+	<solidrect colorMul="#3e5c65ff" x="2000.0" y="780.0" width="40.0" height="20.0"/>
+	<solidrect colorMul="#3e5c65ff" x="1520.0" y="800.0" width="140.0" height="20.0"/>
+</ktree>

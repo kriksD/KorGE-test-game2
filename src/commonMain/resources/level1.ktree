@@ -1,0 +1,28 @@
+<ktree width="3000.0" height="1000.0" gridWidth="20" gridHeight="20">
+	<solidrect name="ground1" colorMul="#000000ff" width="100.0" height="1000.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground2" colorMul="#000000ff" y="900.0" width="1240.0" height="100.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground3" colorMul="#000000ff" x="2900.0" width="100.0" height="1000.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground4" colorMul="#000000ff" x="587.2556413856356" y="901.4152231694225" rotation="74.99999867197056" anchorX="0.5" anchorY="0.5" width="107.5" height="385.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground5" colorMul="#000000ff" x="1240.0" y="800.0" rotation="90.00000250447816" width="100.0" height="480.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground6" colorMul="#000000ff" x="1480.0" y="900.0" width="1420.0" height="100.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground7" colorMul="#000000ff" x="2060.0" y="820.0" rotation="45.00000125223908" width="100.0" height="160.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="ground8" colorMul="#000000ff" x="2060.0" y="820.0" width="940.0" height="100.0">
+		<__ex_physics friction="0.2" restitution="0.2"/>
+	</solidrect>
+	<solidrect name="spawn" colorMul="#631a66ff" x="140.0" y="860.0" width="40.0" height="40.0"/>
+	<solidrect name="finish" colorMul="#366633ff" x="2820.0" y="780.0" width="40.0" height="40.0"/>
+</ktree>

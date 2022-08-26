@@ -1,0 +1,14 @@
+<ktree width="4000.0" height="1000.0" gridWidth="20" gridHeight="20">
+	<solidrect colorMul="#000000ff" width="100.0" height="1000.0"/>
+	<solidrect colorMul="#000000ff" y="900.0" width="360.0" height="100.0"/>
+	<solidrect x="359.99999999999994" y="900.0" width="260.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="1020.0" y="900.0" width="360.0" height="100.0"/>
+	<solidrect x="1380.0" y="899.9999999999999" width="160.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="1540.0" y="459.99999999999983" width="100.0" height="540.0"/>
+	<solidrect colorMul="#000000ff" x="1539.9999999999998" y="900.0" width="860.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="1840.0" y="900.0" rotation="-10.0" width="580.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="2399.9999999999995" y="799.9999999999999" width="380.0" height="200.0"/>
+	<solidrect colorMul="#000000ff" x="2780.0" y="979.9999999999999" width="620.0" height="20.0"/>
+	<solidrect colorMul="#000000ff" x="3400.0" y="899.9999999999995" width="600.0" height="100.0"/>
+	<solidrect colorMul="#000000ff" x="3900.0" y="-3.4638958368304884E-13" width="100.0" height="1000.0"/>
+</ktree>
