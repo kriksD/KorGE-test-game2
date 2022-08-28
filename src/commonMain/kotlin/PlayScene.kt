@@ -2,6 +2,7 @@ import com.soywiz.klock.*
 import com.soywiz.klock.hr.*
 import com.soywiz.korev.*
 import com.soywiz.korge.box2d.*
+import com.soywiz.korge.input.*
 import com.soywiz.korge.internal.*
 import com.soywiz.korge.scene.Scene
 import com.soywiz.korge.view.*
@@ -24,7 +25,7 @@ class PlayScene(private val level: Level) : Scene() {
 
     @OptIn(KorgeUntested::class)
     override suspend fun SContainer.sceneMain() {
-        playerData = DataSaver.loadData()
+        playerData = DataSaver.playerData ?: PlayerData()
 
         val cameraContainer = cameraContainer(
             1000.0, 600.0, clip = true,
@@ -62,7 +63,7 @@ class PlayScene(private val level: Level) : Scene() {
                     input.keys[Key.Q] -> {
                         position(pos.x - 0.00001, pos.y)
                     }
-                    input.keys[Key.ENTER] -> {
+                    input.keys.justReleased(Key.ENTER) -> {
                         launchImmediately { sceneContainer.changeTo<PlayScene>(level) }
                     }
                 }
@@ -79,13 +80,16 @@ class PlayScene(private val level: Level) : Scene() {
 
             playerCircle.position(spawn.pos)
 
+            var collisioned = false
             finish.onCollision(filter = { it == playerCircle }) {
-                playerData.levels[level]?.completed = true
-                playerData.levels[level]?.setNewTime(time)
+                if (!collisioned) {
+                    collisioned = true
+                    playerData.levels[level]?.completed = true
+                    playerData.levels[level]?.setNewTime(time)
 
-                launchImmediately {
-                    DataSaver.saveData(playerData)
-                    sceneContainer.changeTo<MenuScene>()
+                    launchImmediately {
+                        sceneContainer.changeTo<MenuScene>()
+                    }
                 }
             }
         }

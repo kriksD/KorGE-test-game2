@@ -1,4 +1,3 @@
-import com.soywiz.klock.*
 import com.soywiz.korge.input.*
 import com.soywiz.korge.scene.*
 import com.soywiz.korge.view.*
@@ -6,16 +5,28 @@ import com.soywiz.korim.color.*
 
 class MenuScene : Scene() {
     override suspend fun SContainer.sceneInit() {
-        val playerData = DataSaver.loadData()
+        if (DataSaver.playerData == null) {
+            DataSaver.playerData = DataSaver.loadData()
+        }
 
-        val card2 = drawLevelCard(this, playerData.levels[Level.Level2] ?: LevelData())
+        val exitButton = solidRect(200.0, 50.0, Colors.BLACK).alpha(0.5)
+            .alignBottomToBottomOf(this, 10)
+            .alignRightToRightOf(this, 10)
+        text("SAVE AND EXIT", 28.0).centerOn(exitButton)
+
+        exitButton.onClick {
+            DataSaver.playerData?.let { DataSaver.saveData(it) }
+            gameWindow.close()
+        }
+
+        val card2 = drawLevelCard(this, DataSaver.playerData!!.levels[Level.Level2] ?: LevelData())
             .centerOnStage()
 
-        val card1 = drawLevelCard(this, playerData.levels[Level.Level1] ?: LevelData())
+        val card1 = drawLevelCard(this, DataSaver.playerData!!.levels[Level.Level1] ?: LevelData())
             .alignRightToLeftOf(card2, 16)
             .alignTopToTopOf(card2)
 
-        val card3 = drawLevelCard(this, playerData.levels[Level.Level3] ?: LevelData())
+        val card3 = drawLevelCard(this, DataSaver.playerData!!.levels[Level.Level3] ?: LevelData())
             .alignLeftToRightOf(card2, 16)
             .alignTopToTopOf(card2)
 
